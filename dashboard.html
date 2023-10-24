@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to Your Dashboard</h1>
+    <p>Hello, <span id="userName"></span>!</p>
+    <p>Your Information:</p>
+    <ul>
+        <li><strong>Name:</strong> <span id="userFullName"></span></li>
+        <li><strong>Email:</strong> <span id="userEmail"></span></li>
+        <!-- Add more fields as needed -->
+    </ul>
+    <a href="/">Logout</a>
+    <script>
+        // You can populate user information using JavaScript here
+        const userFullName = "John Doe"; // Replace with actual user's name
+        const userEmail = "john@example.com"; // Replace with actual user's email
+
+        document.getElementById("userName").textContent = userFullName;
+        document.getElementById("userFullName").textContent = userFullName;
+        document.getElementById("userEmail").textContent = userEmail;
+    </script>
+</body>
+</html>
